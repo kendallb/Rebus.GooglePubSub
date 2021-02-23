@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Rebus.GooglePubSub.Tests</RootNamespace>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <PackageId>AMain.Rebus.GooglePubSub.Tests</PackageId>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>RELEASE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="microsoft.net.test.sdk" Version="16.8.3" />
+        <PackageReference Include="nunit" Version="3.13.1" />
+        <PackageReference Include="nunit3testadapter" Version="3.17.0" />
+        <PackageReference Include="rebus.tests.contracts" Version="6.4.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Rebus.GooglePubSub\Rebus.GooglePubSub.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="System.ComponentModel.DataAnnotations" />
+    </ItemGroup>
+</Project>

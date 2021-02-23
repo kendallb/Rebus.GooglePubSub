@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Rebus</RootNamespace>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <Authors>mookid8000, kendallb</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://rebus.fm/what-is-rebus/</PackageProjectUrl>
+        <Copyright>Copyright 2021 and later</Copyright>
+        <PackageTags>rebus events google pub/sub</PackageTags>
+        <PackageIcon>little_rebusbus2_copy-500x500.png</PackageIcon>
+        <PackageDescription>Provides a Google Pub/Sub transport for Rebus</PackageDescription>
+        <RepositoryUrl>https://github.com/rebus-org/Rebus</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>little_rebusbus2_copy-500x500.png</PackageIcon>
+        <PackageId>AMain.Rebus.GooglePubSub</PackageId>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>bin\Debug\Rebus.GooglePubSub.xml</DocumentationFile>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>RELEASE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <DocumentationFile>bin\Release\Rebus.GooglePubSub.xml</DocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="microsoft.azure.storage.queue" Version="11.2.2" />
+        <PackageReference Include="rebus" Version="6.5.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="..\artwork\little_rebusbus2_copy-500x500.png">
+            <Pack>True</Pack>
+            <PackagePath>little_rebusbus2_copy-500x500.png</PackagePath>
+        </None>
+    </ItemGroup>
+</Project>
