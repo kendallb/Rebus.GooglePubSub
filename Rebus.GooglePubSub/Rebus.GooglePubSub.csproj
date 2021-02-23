@@ -40,7 +40,7 @@
         <DocumentationFile>bin\Release\Rebus.GooglePubSub.xml</DocumentationFile>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="microsoft.azure.storage.queue" Version="11.2.2" />
+        <PackageReference Include="Google.Cloud.PubSub.V1" Version="2.3.0" />
         <PackageReference Include="rebus" Version="6.5.0" />
     </ItemGroup>
     <ItemGroup>
